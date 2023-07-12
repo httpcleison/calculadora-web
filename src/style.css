@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root{
+    --bg-color-calc: rgb(0, 0, 0);
+    --bg-button-gray: rgb(98, 95, 95);
+    --bg-button-yellow: rgb(224, 190, 98);
+}
+
+
+.calculadora {
+    max-width: 350px;
+    background-color: var(--bg-color-calc);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: -4px -4px 24px 14px rgba(0,0,0,0.17);
+    -webkit-box-shadow: -4px -4px 24px 14px rgba(0,0,0,0.17);
+    -moz-box-shadow: -4px -4px 24px 14px rgba(0,0,0,0.17);
+}
+
+.visor {
+    font-size: 2.5rem;
+    height: 50px;
+    width: 100%;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+
+.bg-gray, .bg-yellow{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 2px;
+}
+
+.buttons button:hover{
+    opacity: 0.5;
+}
+
+.bg-gray {
+    background-color: var(--bg-button-gray);
+}
+
+.bg-yellow {
+    background-color: var(--bg-button-yellow);
+}
+
+.bg-del {
+    background-color: var(--bg-button-yellow);
+    grid-column: span 4;
+    border-radius: 12px;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 350px){
+    .calculadora{
+        visibility: hidden;
+    }
+}

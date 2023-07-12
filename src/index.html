@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <p class="visor">__</p>
+        <div class="buttons">
+            <button onclick="InserirNumero('1')" onclick="InserirNumero('1')" class="bg-gray">1</button>
+            <button onclick="InserirNumero('2')" class="bg-gray">2</button>
+            <button onclick="InserirNumero('3')" class="bg-gray">3</button>
+            <button onclick="InserirNumero('+')" class="bg-yellow">+</button>
+
+            <button onclick="InserirNumero('4')" class="bg-gray">4</button>
+            <button onclick="InserirNumero('5')" class="bg-gray">5</button>
+            <button onclick="InserirNumero('6')" class="bg-gray">6</button>
+            <button onclick="InserirNumero('-')" class="bg-yellow">-</button>
+
+            <button onclick="InserirNumero('7')" class="bg-gray">7</button>
+            <button onclick="InserirNumero('8')" class="bg-gray">8</button>
+            <button onclick="InserirNumero('9')" class="bg-gray">9</button>
+            <button onclick="InserirNumero('*')" class="bg-yellow">x</button>
+
+            <button onclick="InserirNumero('0')" class="bg-gray">0</button>
+            <button onclick="InserirNumero('.')" class="bg-gray">.</button>
+            <button onclick="InserirNumero('/')" class="bg-yellow">/</button>
+            <button onclick="Resultado()" class="bg-yellow">=</button>
+            <button onclick="DeleNumero()" class="bg-del">DEL</button>
+        </div>
+    </div>
+    
+    <script src="./sript.js"></script>
+</body>
+</html>
